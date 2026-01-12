@@ -11,7 +11,7 @@ This is a personalized birthday website where Hiro can celebrate his special day
 - **Welcome Screen**: A warm birthday greeting to start the celebration
 - **Interactive Cake**: Click on the cake to add candles (up to 5), then blow them out!
 - **Birthday Card**: Open an envelope to reveal a heartfelt message and photo gallery
-- **Photo Gallery**: Display of 6 special memories together
+- **Photo**: Display of your special memory together
 - **Beautiful Animations**: Floating hearts, flickering candle flames, smooth transitions
 - **Fully Responsive**: Works perfectly on desktop, tablet, and mobile devices
 
@@ -21,24 +21,19 @@ This is a personalized birthday website where Hiro can celebrate his special day
 2. **Cake Screen** - Click on the cake to add candles (5 times), then click "Blow the Candles!"
 3. **Card Screen** - Click on the envelope to open it and reveal the birthday message and photos
 
-## 📸 Adding Your Photos
+## 📸 Adding Your Photo
 
-Before deploying, you need to add 6 photos to the `images` folder:
+Before deploying, you need to add 1 photo to the `images` folder:
 
-1. Place your 6 favorite photos in the `images` folder
-2. Rename them as: `1.jpg`, `2.jpg`, `3.jpg`, `4.jpg`, `5.jpg`, `6.jpg`
+1. Place your favorite photo in the `images` folder
+2. Rename it as: `photo.jpg`
 3. Supported formats: `.jpg`, `.jpeg`, `.png`
-4. Recommended: Square photos work best (they'll be displayed as squares)
+4. Recommended: Square photos work best (will be displayed as a square)
 
 **Example:**
 ```
 images/
-  ├── 1.jpg
-  ├── 2.jpg
-  ├── 3.jpg
-  ├── 4.jpg
-  ├── 5.jpg
-  └── 6.jpg
+  └── photo.jpg
 ```
 
 ## 🚀 Deploying to Vercel
@@ -55,7 +50,7 @@ images/
    cd /Users/ar-meghana.r/projects/hiro
    ```
 
-3. Add your 6 photos to the `images` folder (see above)
+3. Add your photo to the `images` folder (see above)
 
 4. Deploy:
    ```bash
@@ -73,7 +68,7 @@ images/
 
 ### Method 2: Using Vercel Dashboard
 
-1. Add your 6 photos to the `images` folder
+1. Add your photo to the `images` folder
 
 2. Initialize a git repository (if not already done):
    ```bash
@@ -141,14 +136,14 @@ The website journey:
 1. **Welcome** - Birthday greeting from Meghana
 2. **Interactive Cake** - Click to add 5 candles, then blow them out
 3. **Envelope** - Click to open and reveal the card
-4. **Birthday Card** - Your heartfelt message and 6 photos
+4. **Birthday Card** - Your heartfelt message and special photo
 
 ## 🔧 Troubleshooting
 
-**Photos not showing?**
-- Make sure photos are named exactly: `1.jpg`, `2.jpg`, etc.
-- Check they're in the `images` folder
-- Try using `.jpg` format instead of `.png` (or update the HTML file extensions)
+**Photo not showing?**
+- Make sure the photo is named exactly: `photo.jpg`
+- Check it's in the `images` folder
+- Try using `.jpg` format instead of `.png` (or update the HTML file extension)
 
 **Candles not appearing?**
 - Make sure JavaScript is enabled in your browser
@@ -176,7 +171,7 @@ Made with ❤️ by Meghana for Hiro's Birthday
 ## 🎉 Final Notes
 
 Remember to:
-1. ✅ Add your 6 photos before deploying
+1. ✅ Add your photo before deploying (name it `photo.jpg`)
 2. ✅ Test locally to make sure everything looks good
 3. ✅ Deploy to Vercel
 4. ✅ Copy the URL

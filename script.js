@@ -104,7 +104,7 @@ function openPhoto(photoNum) {
     const modal = document.getElementById('photoModal');
     const modalImg = document.getElementById('modalImage');
     modal.classList.add('active');
-    modalImg.src = `images/${photoNum}.jpg`;
+    modalImg.src = 'images/photo.jpg';
 }
 
 function closePhoto() {
