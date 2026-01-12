@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Happy Birthday Hiro! 🎉</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="hearts-container" id="heartsContainer"></div>
+
+    <!-- Welcome Screen -->
+    <section id="welcome" class="screen active">
+        <div class="content">
+            <h1 class="title">Happy Birthday, Hiro! 🎂</h1>
+            <p class="subtitle">From Meghana 💕</p>
+            <div class="message-box">
+                <p>I made you a special birthday cake!</p>
+                <p>Let's celebrate together...</p>
+            </div>
+            <button class="btn-primary" onclick="showCake()">See Your Cake 🎂</button>
+        </div>
+    </section>
+
+    <!-- Cake Screen -->
+    <section id="cake" class="screen">
+        <div class="content">
+            <h2>Your Birthday Cake! 🎂</h2>
+            <div class="instruction-box" id="instruction">
+                <p>Click on the cake to add candles! 🕯️</p>
+            </div>
+
+            <div class="cake-container">
+                <div class="cake" id="cake">
+                    <div class="cake-layer layer-3"></div>
+                    <div class="cake-layer layer-2"></div>
+                    <div class="cake-layer layer-1"></div>
+                    <div class="candles-container" id="candlesContainer"></div>
+                </div>
+            </div>
+
+            <button class="btn-primary" id="blowBtn" onclick="blowCandles()" style="display: none;">
+                Blow the Candles! 💨
+            </button>
+        </div>
+    </section>
+
+    <!-- Card Screen -->
+    <section id="card" class="screen">
+        <div class="content">
+            <p class="tap-hint">Click the card to open it 💌</p>
+
+            <div class="card-wrapper" id="cardWrapper">
+                <div class="birthday-card-3d" id="birthdayCard" onclick="openCard()">
+                    <!-- Front Cover -->
+                    <div class="card-front">
+                        <div class="card-decoration-top"></div>
+                        <h1 class="cover-title">Happy Birthday</h1>
+                        <div class="cover-emoji">🎂</div>
+                        <h2 class="cover-name">Hiro</h2>
+                        <p class="cover-from">From: Meghana 💕</p>
+                        <div class="card-decoration-bottom"></div>
+                    </div>
+
+                    <!-- Inside Left (Photos) -->
+                    <div class="card-inside-left">
+                        <h3 class="inside-title">Our Memories 📸</h3>
+                        <div class="photo-gallery-card">
+                            <div class="photo-item-small" onclick="event.stopPropagation(); openPhoto(1)">
+                                <img src="images/1.jpg" alt="Memory 1">
+                            </div>
+                            <div class="photo-item-small" onclick="event.stopPropagation(); openPhoto(2)">
+                                <img src="images/2.jpg" alt="Memory 2">
+                            </div>
+                            <div class="photo-item-small" onclick="event.stopPropagation(); openPhoto(3)">
+                                <img src="images/3.jpg" alt="Memory 3">
+                            </div>
+                            <div class="photo-item-small" onclick="event.stopPropagation(); openPhoto(4)">
+                                <img src="images/4.jpg" alt="Memory 4">
+                            </div>
+                            <div class="photo-item-small" onclick="event.stopPropagation(); openPhoto(5)">
+                                <img src="images/5.jpg" alt="Memory 5">
+                            </div>
+                            <div class="photo-item-small" onclick="event.stopPropagation(); openPhoto(6)">
+                                <img src="images/6.jpg" alt="Memory 6">
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Inside Right (Message) -->
+                    <div class="card-inside-right">
+                        <h2 class="inside-greeting">Happy Birthday, My Love! 🎉</h2>
+                        <div class="message-scroll">
+                            <p>From bus mates to soulmates... who would've thought?</p>
+                            <p>Remember when we first met on the bus? Those rides became the best part of my day because of you. Sharing earbuds, discovering new songs together, stealing glances when you weren't looking...</p>
+                            <p>Then came the endless texts, the late-night conversations, the silly memes, the deep talks. We just vibed. You became my favorite person to text. My favorite person, period.</p>
+                            <p>Every day with you is a gift. Every conversation, every laugh, every shared song - they all mean the world to me.</p>
+                            <p>Thank you for being you. Thank you for choosing me. Thank you for turning ordinary bus rides into the beginning of something extraordinary.</p>
+                            <p>Here's to more music, more vibes, more memories, and forever together.</p>
+                            <p class="message-signature">All my love, always,<br>Meghana 💕</p>
+                        </div>
+                        <div class="birthday-wish-card">
+                            <p>🎂 I hope all your wishes come true! 🎂</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Photo Modal -->
+    <div id="photoModal" class="modal">
+        <span class="close" onclick="closePhoto()">&times;</span>
+        <img class="modal-content" id="modalImage">
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
